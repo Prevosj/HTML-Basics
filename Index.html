@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Jules</title>
+    <link rel="short icon" href="" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>Formulaire</li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Ceci est le titre principal</h1>
+      <p>
+        Hey kho
+        <em>texte en italique</em>
+        <strong>texte en gras</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, neque
+        quam molestiae cumque, temporibus deleniti quae ipsam assumenda eum sint
+        architecto obcaecati dolore quo illo veritatis corporis iure nam
+        distinctio.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Ordered List</h2>
+        <ol>
+          <li>Ceci est une</li>
+          <li>liste dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Image en html</h3>
+        <img
+          src="./Capture Mathématique.png"
+          height="200"
+          alt="capture d'écran mathématique"
+        />
+        <!-- L'ALT de l'image est pour les non voyants -->
+        <div>
+          <h5>Les liens</h5>
+          <a href="https://www.exemple.com/" target="_blank">Mon Instagram</a>
+          <!-- _blank permet de créer un nouvel onglet -->
+        </div>
+        <div>
+          <video src=""></video>
+          <!-- ./ pour dire qu on part de la racine et on part chercher la vidéo + auto play + muted (conseiller de ne pas mettre de son) + loop + height pour contrôler la place-->
+        </div>
+      </section>
+
+      <section>
+        <h2>Les formulaires</h2>
+        <form action="">
+          <!-- action = où vont les données une fois qu on a soumis le formulaire -->
+          <label for="name">Nom</label>
+          <!-- "for" et "id" permettent de lier le label à l'input -->
+          <input type="text" id="name" placeholder="Entrez votre nom" />
+          <!-- élément dans lequel on peut inscrire des données (ex: types text, date, number) -->
+
+          <br />
+
+          <label for="age">Entrez votre âge</label>
+          <input type="number" id="âge" value="18" />
+
+          <br />
+
+          <!-- inpuct de type select -->
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Autres">Autres</option>
+          </select>
+
+          <!-- input de type radio -->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="Cat" />
+            <label for="Cat">Chat</label>
+          </div>
+          <textarea
+            placeholder="Votre messsage..."
+            cols="20"
+            rows="5"
+          ></textarea>
+
+          <br />
+
+          <!-- Input de type checkbox -->
+          <input type="checkbox" name="" id="cgv" />
+          <label for="">Accepter les conditions générales</label>
+
+          <br />
+
+          <!-- Input de type de submit qui permet de valider le formulaire -->
+          <input type="submit" value="Bouton validation formulaire" />
+        </form>
+
+        <!-- Ceci est un bouton -->
+        <button>Ceci est un bouton</button>
+      </section>
+    </main>
+    <!-- Mail et envoi de fichiers -->
+    <footer>
+      <a href="mailto:...@gmail.com">Contactez moi!</a>
+      <a href="./notice.txt" download="Notice">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
